@@ -1,0 +1,54 @@
+Head of the Data Base:
+    id   age    income  hours_per_week                                                                   expenses education marital_status      city          job  gender
+0  1.0  69.0   84367.0            26.0  <function generate_large_dataset.<locals>.<lambda> at 0x000002A85A9DB6A0>  Bachelor         Single    Austin      Teacher    Male
+1  2.0  32.0  113931.0            64.0  <function generate_large_dataset.<locals>.<lambda> at 0x000002A85A9DB6A0>  Bachelor        Married       NaN    Scientist  Female
+2  3.0   NaN   23581.0            45.0  <function generate_large_dataset.<locals>.<lambda> at 0x000002A85A9DB6A0>  Bachelor       Divorced    Austin  Salesperson    Male
+3  4.0  78.0   49463.0            65.0  <function generate_large_dataset.<locals>.<lambda> at 0x000002A85A9DB6A0>       NaN       Divorced   Phoenix       Doctor  Female
+4  5.0  38.0   21093.0            19.0                                                                        NaN       PhD        Widowed  San Jose  Salesperson  Female
+***********
+Information of the Data Base:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 100000 entries, 0 to 99999
+Data columns (total 10 columns):
+ #   Column          Non-Null Count  Dtype  
+---  ------          --------------  -----  
+ 0   id              95000 non-null  float64
+ 1   age             95000 non-null  float64
+ 2   income          95001 non-null  float64
+ 3   hours_per_week  95001 non-null  float64
+ 4   expenses        95000 non-null  object 
+ 5   education       75803 non-null  object 
+ 6   marital_status  95000 non-null  object 
+ 7   city            95000 non-null  object 
+ 8   job             95000 non-null  object 
+ 9   gender          95000 non-null  object 
+dtypes: float64(4), object(6)
+memory usage: 7.6+ MB
+***********
+Statistic of Data Base:
+                  id           age          income  hours_per_week
+count   95000.000000  95000.000000    95001.000000     95001.00000
+mean    49991.269842     53.323516   110328.587057        39.52511
+std     28872.724185     20.773419    55764.403279        17.32360
+min         1.000000     18.000000    20001.000000        10.00000
+25%     24984.750000     35.000000    64964.000000        25.00000
+50%     49989.500000     53.000000   109857.000000        40.00000
+75%     75008.250000     71.000000   154846.000000        54.00000
+max    100000.000000     89.000000  1000000.000000       100.00000
+***********
+Duplicate in Data Base: 0
+***********
+Missing Values in Data Base:
+id                 5000
+age                5000
+income             4999
+hours_per_week     4999
+expenses           5000
+education         24197
+marital_status     5000
+city               5000
+job                5000
+gender             5000
+***********
+Categorical columns: ['expenses', 'education', 'marital_status', 'city', 'job', 'gender']
+Numerical columns: ['id', 'age', 'income', 'hours_per_week']
