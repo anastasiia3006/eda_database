@@ -5,14 +5,13 @@ import random
 
 def generate_large_dataset(n_rows=100000, output_file="synthetic_data.csv"):
     """
-    Генерує велику базу даних для тренування EDA та зберігає її у CSV-файл.
-
-    :param n_rows: Кількість рядків у датасеті
-    :param output_file: Ім'я файлу для збереження
+ Generates a large database for EDA training and stores it in a CSV file.
+    : param n_Rows: Number of rows in the dataset
+    : param output_file: filename for saving
     """
-    np.random.seed(42)  # Для відтворюваності результатів
+    np.random.seed(42)  # For reproduction of results
 
-    # Списки значень для категоріальних змінних
+    # Lists of values ​​for categorical variables
     education_levels = ["High School", "Bachelor", "Master", "PhD", "None"]
     marital_statuses = ["Single", "Married", "Divorced", "Widowed"]
     cities = ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix", "San Diego", "Dallas", "San Jose", "Austin",
@@ -21,7 +20,7 @@ def generate_large_dataset(n_rows=100000, output_file="synthetic_data.csv"):
             "Freelancer"]
     genders = ["Male", "Female"]
 
-    # Генеруємо дані
+    # Data generation
     data = {
         "id": np.arange(1, n_rows + 1),
         "age": np.random.randint(18, 90, n_rows),
