@@ -46,7 +46,7 @@ def generate_large_dataset(n_rows=100000, output_file="synthetic_data.csv"):
 
     # Зберігаємо у файл
     df.to_csv(output_file, index=False)
-    print(f"✅ База даних '{output_file}' створена! Розмір: {df.shape}")
+    print(f" База даних '{output_file}' створена! Розмір: {df.shape}")
 
     return df
 
